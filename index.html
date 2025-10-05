@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Video</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" autoplay loop muted>
+        <source src="video-fondo.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <script>
+        // Si deseas controlar el video mediante JavaScript
+        const video = document.getElementById('video');
+        video.play();
+    </script>
+</body>
+</html>
